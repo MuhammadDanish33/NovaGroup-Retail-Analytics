@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-NovaGroup is a fictional multi-location UK retailer operating stores, warehouses, and fulfilment centres. This project performs an end-to-end SQL analysis of its transactional and operational data — covering sales performance, product margins, inventory health, supply chain fulfilment, and executive KPIs — using a star-schema data warehouse built on SQL Server. The purpose is to replicate the kind of structured, evidence-based retail analysis that supports commercial and operational decisions.
+NovaGroup is a fictional multi-location UK retailer operating stores, warehouses, and fulfilment centres. This project performs an end-to-end SQL analysis of its transactional and operational data covering sales performance, product margins, inventory health, supply chain fulfilment, and executive KPIs using a star-schema data warehouse built on SQL Server. The purpose is to replicate the kind of structured, evidence-based retail analysis that supports commercial and operational decisions.
 
 ---
 
@@ -37,7 +37,7 @@ NovaGroup is a fictional multi-location UK retailer operating stores, warehouses
 
 ### 1. Business Snapshot: £33.4M Revenue, £14.1M Gross Profit, £35.9M in Open Orders
 
-The full dataset records **194,571 units sold**, **£33,402,300.51 in net revenue**, and **£14,075,530.24 in gross profit**. Current inventory on hand is valued at **£65,722.51**. Open purchase orders — stock ordered from suppliers but not yet received — total **£35,925,849.55**, exceeding the entire period's net revenue.
+The full dataset records **194,571 units sold**, **£33,402,300.51 in net revenue**, and **£14,075,530.24 in gross profit**. Current inventory on hand is valued at **£65,722.51**. Open purchase orders stock ordered from suppliers but not yet received total **£35,925,849.55**, exceeding the entire period's net revenue.
 
 > **Why it matters:** An open PO pipeline larger than period revenue signals significant near-term stock liability. If sell-through doesn't keep pace with incoming goods, working capital will be under pressure.
 
@@ -45,7 +45,7 @@ The full dataset records **194,571 units sold**, **£33,402,300.51 in net revenu
 
 ### 2. Sports Leads on Both Revenue and Profit; Clothing Lags
 
-**Sports** is the top category on both measures: **£3,971,160.06 in net sales** and **£1,798,344.31 in gross profit**. **Health & Beauty** follows at £3,828,378.74 and £1,720,946.44. **Clothing** ranks last in gross profit at **£1,057,382.83** — around 59p of profit for every £1 Sports generates — despite Automotive (£2,939,437.26) and Electronics (£2,917,406.67) generating comparable revenue in the lower half.
+**Sports** is the top category on both measures: **£3,971,160.06 in net sales** and **£1,798,344.31 in gross profit**. **Health & Beauty** follows at £3,828,378.74 and £1,720,946.44. **Clothing** ranks last in gross profit at **£1,057,382.83** around 59p of profit for every £1 Sports generates despite Automotive (£2,939,437.26) and Electronics (£2,917,406.67) generating comparable revenue in the lower half.
 
 > **Why it matters:** Clothing's margin underperformance relative to its revenue scale warrants a review of pricing, promotions, and cost of goods. A category margin problem at this scale compounds quickly.
 
@@ -53,7 +53,7 @@ The full dataset records **194,571 units sold**, **£33,402,300.51 in net revenu
 
 ### 3. Revenue Rank Does Not Equal Profit Rank
 
-**Toys** ranks 5th in net sales (£3,397,852.35) but 3rd in gross profit (£1,492,645.25). **Grocery** ranks 3rd in net sales (£3,528,217.08) but 5th in gross profit (£1,406,518.67). The inversion signals that Grocery's higher revenue does not translate into higher profit — likely driven by lower margin products, promotional pricing, or mix.
+**Toys** ranks 5th in net sales (£3,397,852.35) but 3rd in gross profit (£1,492,645.25). **Grocery** ranks 3rd in net sales (£3,528,217.08) but 5th in gross profit (£1,406,518.67). The inversion signals that Grocery's higher revenue does not translate into higher profit likely driven by lower margin products, promotional pricing, or mix.
 
 > **Why it matters:** Merchandise and pricing decisions should be anchored to profit contribution, not headline revenue. Investing in Toys growth returns more gross profit per pound of sales than equivalent Grocery growth.
 
@@ -68,7 +68,7 @@ The full dataset records **194,571 units sold**, **£33,402,300.51 in net revenu
 | Online | 48,775 | £8,262,387.93 |
 | Marketplace | 47,997 | £8,212,540.22 |
 
-The spread between the highest and lowest channel is £365,827 — roughly 4% of any channel's revenue.
+The spread between the highest and lowest channel is £365,827 roughly 4% of any channel's revenue.
 
 > **Why it matters:** No single channel dominates, indicating a healthy omnichannel spread. However, Marketplace trails on both volume and revenue; a review of listing fees or commission structures may be warranted.
 
